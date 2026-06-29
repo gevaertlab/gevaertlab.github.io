@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Publications | Gevaert Lab · Stanford University</title>
+  <meta name="description" content="Publications from the Gevaert Lab at Stanford University." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .filter-bar {
+      display: flex;
+      gap: .75rem;
+      flex-wrap: wrap;
+      align-items: center;
+      margin-bottom: 1.5rem;
+    }
+    .filter-bar select, .filter-bar input {
+      padding: .45rem .75rem;
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      font-size: .9rem;
+      font-family: var(--font-sans);
+      background: var(--white);
+      color: var(--text);
+    }
+    .filter-bar input { min-width: 220px; }
+    #pub-count { font-size: .88rem; color: var(--mid-gray); margin-left: auto; }
+    .pub-authors { color: var(--mid-gray); font-size: .85rem; margin-bottom: .2rem; }
+    .pub-authors strong { color: var(--cardinal); }
+    .highlighted-section { margin-bottom: 2.5rem; }
+    .highlighted-section h3 { color: var(--cardinal); font-size: 1.15rem; margin-bottom: 1rem; }
+    .external-links { display: flex; gap: 1.5rem; flex-wrap: wrap; margin-top: 1rem; align-items: center; }
+    .external-links a { font-size: .88rem; color: var(--cardinal); font-weight: 600; }
+  </style>
+</head>
+<body>
+
+<div class="stanford-bar">
+  <div class="container">
+    <a href="https://stanford.edu">Stanford University</a>
+    <span>·</span>
+    <a href="https://med.stanford.edu">Stanford Medicine</a>
+    <span>·</span>
+    <a href="https://med.stanford.edu/dbds.html">Biomedical Data Science</a>
+  </div>
+</div>
+
+<nav id="main-nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand">
+      Gevaert Lab
+      <span>Computational Medicine · Stanford</span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="people.html">People</a></li>
+      <li><a href="publications.html">Publications</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div style="background:var(--light-gray); padding:2.5rem 0; border-bottom:1px solid var(--border);">
+  <div class="container">
+    <h1 style="color:var(--cardinal);">Publications</h1>
+    <p class="text-muted">Automatically updated from PubMed · Last loaded: <span id="last-updated">—</span></p>
+  </div>
+</div>
+
+<section>
+  <div class="container">
+
+    <!-- Highlighted publications (static, curated) -->
+    <div class="highlighted-section">
+      <h2 class="section-heading">Highlighted Publications</h2>
+
+      <div class="pub-highlighted">
+        <div class="pub-title">
+          <a href="https://www.sciencedirect.com/science/article/pii/S2589750025000287" target="_blank">Medical digital twins: enabling precision medicine and medical artificial intelligence</a>
+        </div>
+        <div class="pub-authors">Sadée C, Testa S, Barba T, … <strong>Gevaert O</strong></div>
+        <div class="pub-meta"><span class="pub-journal">Lancet Digital Health</span> · 2025 · doi: 10.1016/j.landig.2025.02.004</div>
+      </div>
+
+      <div class="pub-highlighted">
+        <div class="pub-title">
+          <a href="https://www.science.org/doi/10.1126/sciadv.adu2151" target="_blank">Single-cell multimodal analysis reveals tumor microenvironment predictive of treatment response in non-small cell lung cancer</a>
+        </div>
+        <div class="pub-authors">Zheng Y, Sadée C, Ozawa M, Howitt BE, <strong>Gevaert O</strong></div>
+        <div class="pub-meta"><span class="pub-journal">Science Advances</span> · 2025 · doi: 10.1126/sciadv.adu2151</div>
+      </div>
+
+      <div class="pub-highlighted">
+        <div class="pub-title">
+          <a href="https://www.nature.com/articles/s41551-024-01193-8" target="_blank">Generation of synthetic whole-slide image tiles of tumours from RNA-sequencing data via cascaded diffusion models</a>
+        </div>
+        <div class="pub-authors">Carrillo-Perez F, Pizurica M, Zheng Y, … <strong>Gevaert O</strong></div>
+        <div class="pub-meta"><span class="pub-journal">Nature Biomedical Engineering</span> · 2025 · doi: 10.1038/s41551-024-01193-8</div>
+      </div>
+
+      <div class="pub-highlighted">
+        <div class="pub-title">
+          <a href="https://www.nature.com/articles/s41467-024-54182-5" target="_blank">Digital profiling of gene expression from histology images with linearized attention</a>
+        </div>
+        <div class="pub-authors">Pizurica M, Zheng Y, Carrillo-Perez F, … <strong>Gevaert O</strong></div>
+        <div class="pub-meta"><span class="pub-journal">Nature Communications</span> · 2024 · doi: 10.1038/s41467-024-54182-5</div>
+      </div>
+
+      <div class="pub-highlighted">
+        <div class="pub-title">
+          <a href="https://www.nature.com/articles/s42256-023-00633-5" target="_blank">Multimodal data fusion for cancer biomarker discovery with deep learning</a>
+        </div>
+        <div class="pub-authors">Steyaert S, Pizurica M, Nagaraj D, … <strong>Gevaert O</strong></div>
+        <div class="pub-meta"><span class="pub-journal">Nature Machine Intelligence</span> · 2023 · doi: 10.1038/s42256-023-00633-5</div>
+      </div>
+
+      <div class="pub-highlighted">
+        <div class="pub-title">
+          <a href="https://www.nature.com/articles/s41591-023-02225-7" target="_blank">A deep-learning algorithm to classify skin lesions from mpox virus infection</a>
+        </div>
+        <div class="pub-authors">Thieme AH, Zheng Y, Machiraju G, … <strong>Gevaert O</strong></div>
+        <div class="pub-meta"><span class="pub-journal">Nature Medicine</span> · 2023 · doi: 10.1038/s41591-023-02225-7</div>
+      </div>
+
+      <div class="pub-highlighted">
+        <div class="pub-title">
+          <a href="https://www.nature.com/articles/s42256-020-0173-6" target="_blank">A Shallow Convolutional Neural Network Predicts Prognosis of Lung Cancer Patients in Multi-Institutional CT-Image Data</a>
+        </div>
+        <div class="pub-authors">Mukherjee P, Zhou M, Lee E, … <strong>Gevaert O</strong></div>
+        <div class="pub-meta"><span class="pub-journal">Nature Machine Intelligence</span> · 2020 · doi: 10.1038/s42256-020-0173-6</div>
+      </div>
+
+      <div class="pub-highlighted">
+        <div class="pub-title">
+          <a href="https://www.nature.com/articles/s41467-020-20167-3" target="_blank">A meta-learning approach for genomic survival analysis</a>
+        </div>
+        <div class="pub-authors">Qiu YL, Zheng H, Devos A, Selby H, <strong>Gevaert O</strong></div>
+        <div class="pub-meta"><span class="pub-journal">Nature Communications</span> · 2020 · doi: 10.1038/s41467-020-20167-3</div>
+      </div>
+    </div>
+
+    <hr style="border:none; border-top:2px solid var(--border); margin: 2rem 0;" />
+
+    <!-- Auto-updating full list -->
+    <h2 class="section-heading">All Publications</h2>
+    <p style="color:var(--mid-gray); margin-bottom:1.25rem; font-size:.9rem;">
+      Fetched live from PubMed. Gevaert O as last author (excludes preprints, errata, and unrelated authors).
+    </p>
+
+    <div class="filter-bar">
+      <input type="text" id="pub-search" placeholder="Search by title, author, journal…" />
+      <select id="pub-year-filter">
+        <option value="">All years</option>
+      </select>
+      <span id="pub-count"></span>
+    </div>
+
+    <div id="pub-loading">
+      <div class="spinner"></div>
+      <p>Loading publications from PubMed…</p>
+    </div>
+
+    <div id="pub-container" style="display:none;"></div>
+
+    <div id="pub-error" style="display:none; padding:2rem; background:var(--light-gray); border-radius:6px; text-align:center;">
+      <p>Unable to load publications from PubMed right now.</p>
+      <p style="font-size:.9rem; color:var(--mid-gray);">View them directly on
+        <a href="https://pubmed.ncbi.nlm.nih.gov/?term=Gevaert+O%5BLASTAU%5D+NOT+medRxiv+NOT+bioRxiv+NOT+Desmet+NOT+Camarillo+NOT+erratum&show_snippets=off&sort=date&size=200" target="_blank">PubMed</a> or
+        <a href="https://scholar.google.com/citations?user=_6XYKXMpK34C&hl=en" target="_blank">Google Scholar</a>.
+      </p>
+    </div>
+
+    <!-- External profile links -->
+    <div style="margin-top:2.5rem; padding:1.5rem; background:var(--light-gray); border-radius:8px;">
+      <p style="font-weight:600; margin-bottom:.75rem;">Browse on external platforms:</p>
+      <div class="external-links">
+        <a href="https://pubmed.ncbi.nlm.nih.gov/?term=Gevaert+O%5BLASTAU%5D+NOT+medRxiv+NOT+bioRxiv+NOT+Desmet+NOT+Camarillo+NOT+erratum&show_snippets=off&sort=date&size=200" target="_blank">PubMed →</a>
+        <a href="https://scholar.google.com/citations?user=_6XYKXMpK34C&hl=en" target="_blank">Google Scholar →</a>
+        <a href="https://profiles.stanford.edu/olivier-gevaert?tab=publications#publications" target="_blank">Stanford Profile →</a>
+        <a href="https://arxiv.org/search/advanced?advanced=&terms-0-operator=AND&terms-0-term=Olivier+Gevaert&terms-0-field=author" target="_blank">arXiv →</a>
+        <a href="https://www.biorxiv.org/search/olivier%2520gevaert" target="_blank">bioRxiv →</a>
+        <a href="https://www.medrxiv.org/search/olivier%2520gevaert" target="_blank">medRxiv →</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">Gevaert Lab</div>
+        <p>Computational Medicine · Stanford University<br>
+        Department of Medicine &amp; Biomedical Data Science</p>
+      </div>
+      <div>
+        <h4>Site</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="people.html">People</a></li>
+          <li><a href="publications.html">Publications</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Stanford</h4>
+        <ul class="footer-links">
+          <li><a href="https://stanford.edu">Stanford University</a></li>
+          <li><a href="https://med.stanford.edu">Stanford Medicine</a></li>
+          <li><a href="https://med.stanford.edu/dbds.html">Biomedical Data Science</a></li>
+          <li><a href="https://profiles.stanford.edu/olivier-gevaert">Faculty Profile</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 The Board of Trustees of the Leland Stanford Junior University</span>
+      <span>
+        <a href="https://www.stanford.edu/site/privacy">Privacy</a> ·
+        <a href="https://www.stanford.edu/site/terms">Terms</a>
+      </span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script>
+/* ============================================================
+   PubMed auto-fetch for Gevaert Lab publications
+   Uses NCBI E-utilities (free, no API key needed for <3 req/sec)
+   ============================================================ */
+
+const PUBMED_SEARCH = 'Gevaert O[LASTAU] NOT medRxiv NOT bioRxiv NOT Desmet NOT Camarillo NOT erratum';
+const MAX_RESULTS   = 200;
+
+// Cache in sessionStorage so we don't re-fetch on the same visit
+const CACHE_KEY = 'gevaertlab_pubs_v2';
+
+async function fetchPubs() {
+  // 1. Search for IDs
+  const searchUrl = `https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=${encodeURIComponent(PUBMED_SEARCH)}&retmax=${MAX_RESULTS}&sort=date&retmode=json`;
+  const searchRes  = await fetch(searchUrl);
+  if (!searchRes.ok) throw new Error('PubMed search failed');
+  const searchData = await searchRes.json();
+  const ids        = searchData.esearchresult.idlist;
+  if (!ids.length) return [];
+
+  // 2. Fetch summaries for those IDs
+  const summaryUrl  = `https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&id=${ids.join(',')}&retmode=json`;
+  const summaryRes  = await fetch(summaryUrl);
+  if (!summaryRes.ok) throw new Error('PubMed summary fetch failed');
+  const summaryData = await summaryRes.json();
+  return Object.values(summaryData.result).filter(p => p.uid);
+}
+
+function boldGevaert(authorStr) {
+  return authorStr.replace(/(Gevaert O\b)/g, '<strong>$1</strong>');
+}
+
+function formatAuthors(authorsArr) {
+  if (!authorsArr || authorsArr.length === 0) return '';
+  const names = authorsArr.map(a => a.name);
+  if (names.length <= 6) return boldGevaert(names.join(', '));
+  return boldGevaert(names.slice(0, 5).join(', ')) + ', … ' + boldGevaert(names[names.length - 1]);
+}
+
+function renderPubs(pubs) {
+  // Group by year
+  const byYear = {};
+  pubs.forEach(p => {
+    const year = p.pubdate ? p.pubdate.substring(0, 4) : 'Unknown';
+    if (!byYear[year]) byYear[year] = [];
+    byYear[year].push(p);
+  });
+
+  const years = Object.keys(byYear).sort((a, b) => b - a);
+
+  // Populate year filter
+  const yearSel = document.getElementById('pub-year-filter');
+  years.forEach(y => {
+    const opt = document.createElement('option');
+    opt.value = y;
+    opt.textContent = y;
+    yearSel.appendChild(opt);
+  });
+
+  // Render
+  const container = document.getElementById('pub-container');
+  container.innerHTML = '';
+
+  let allPubEls = [];
+
+  years.forEach(year => {
+    const heading = document.createElement('div');
+    heading.className = 'pub-year-heading';
+    heading.textContent = year;
+    heading.dataset.year = year;
+    container.appendChild(heading);
+
+    const list = document.createElement('ul');
+    list.className = 'pub-list';
+    list.dataset.year = year;
+
+    byYear[year].forEach(pub => {
+      const li = document.createElement('li');
+      li.className = 'pub-item';
+      li.dataset.title   = (pub.title || '').toLowerCase();
+      li.dataset.authors = (pub.authors || []).map(a => a.name).join(' ').toLowerCase();
+      li.dataset.journal = (pub.fulljournalname || pub.source || '').toLowerCase();
+      li.dataset.year    = year;
+
+      const pmid  = pub.uid;
+      const doi   = (pub.articleids || []).find(x => x.idtype === 'doi');
+      const doiVal = doi ? doi.value : null;
+
+      li.innerHTML = `
+        <div class="pub-title">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/${pmid}/" target="_blank">${pub.title || '(no title)'}</a>
+        </div>
+        <div class="pub-authors">${formatAuthors(pub.authors)}</div>
+        <div class="pub-meta">
+          <span class="pub-journal">${pub.fulljournalname || pub.source || ''}</span>
+          ${pub.pubdate ? ' · ' + pub.pubdate : ''}
+          ${pub.volume ? ' · ' + pub.volume : ''}
+          ${pub.issue ? '(' + pub.issue + ')' : ''}
+          ${pub.pages ? ':' + pub.pages : ''}
+        </div>
+        <div class="pub-source-links">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/${pmid}/" target="_blank">PubMed</a>
+          ${doiVal ? `<a href="https://doi.org/${doiVal}" target="_blank">DOI</a>` : ''}
+        </div>`;
+
+      list.appendChild(li);
+      allPubEls.push({ li, heading, list, year });
+    });
+
+    container.appendChild(list);
+  });
+
+  updateCount(pubs.length);
+
+  // --- Filtering logic ---
+  function filterPubs() {
+    const query   = document.getElementById('pub-search').value.toLowerCase().trim();
+    const selYear = document.getElementById('pub-year-filter').value;
+    let shown = 0;
+
+    // Track which years have visible items
+    const yearHasVisible = {};
+    years.forEach(y => { yearHasVisible[y] = false; });
+
+    allPubEls.forEach(({ li, year }) => {
+      const matchSearch = !query || li.dataset.title.includes(query)
+                                  || li.dataset.authors.includes(query)
+                                  || li.dataset.journal.includes(query);
+      const matchYear   = !selYear || li.dataset.year === selYear;
+      const visible     = matchSearch && matchYear;
+      li.style.display  = visible ? '' : 'none';
+      if (visible) { shown++; yearHasVisible[year] = true; }
+    });
+
+    // Show/hide year headings and lists
+    years.forEach(y => {
+      const h = container.querySelector(`.pub-year-heading[data-year="${y}"]`);
+      const l = container.querySelector(`.pub-list[data-year="${y}"]`);
+      if (h) h.style.display = yearHasVisible[y] ? '' : 'none';
+      if (l) l.style.display = yearHasVisible[y] ? '' : 'none';
+    });
+
+    updateCount(shown);
+  }
+
+  function updateCount(n) {
+    document.getElementById('pub-count').textContent = n + ' publication' + (n !== 1 ? 's' : '');
+  }
+
+  document.getElementById('pub-search').addEventListener('input', filterPubs);
+  document.getElementById('pub-year-filter').addEventListener('change', filterPubs);
+}
+
+async function init() {
+  const loading   = document.getElementById('pub-loading');
+  const container = document.getElementById('pub-container');
+  const errEl     = document.getElementById('pub-error');
+  const updated   = document.getElementById('last-updated');
+
+  try {
+    // Try cache first
+    let pubs;
+    const cached = sessionStorage.getItem(CACHE_KEY);
+    if (cached) {
+      const parsed = JSON.parse(cached);
+      pubs = parsed.pubs;
+      updated.textContent = 'cached this session';
+    } else {
+      pubs = await fetchPubs();
+      try {
+        sessionStorage.setItem(CACHE_KEY, JSON.stringify({ pubs, ts: Date.now() }));
+      } catch(e) { /* storage full, skip */ }
+      updated.textContent = new Date().toLocaleDateString('en-US', { year:'numeric', month:'short', day:'numeric' });
+    }
+
+    loading.style.display  = 'none';
+    container.style.display = '';
+    renderPubs(pubs);
+
+  } catch(e) {
+    console.error('PubMed fetch error:', e);
+    loading.style.display = 'none';
+    errEl.style.display   = '';
+    updated.textContent   = 'unavailable';
+  }
+}
+
+init();
+</script>
+</body>
+</html>
