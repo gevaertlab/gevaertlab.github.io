@@ -312,12 +312,20 @@ nav#main-nav {
   background: var(--light);
   border: 1px solid var(--border);
   border-radius: 10px;
-  height: 220px;
+  height: 260px;
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 .research-visual svg { opacity: .25; }
+.research-visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+}
 
 /* --- People -------------------------------------------- */
 .pi-section {
