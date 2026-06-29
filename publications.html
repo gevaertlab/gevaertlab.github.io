@@ -92,7 +92,7 @@
 
     <!-- Live PubMed feed -->
     <p class="section-label">All publications</p>
-    <p style="font-size:.85rem; color:var(--muted); margin-bottom:1.25rem;">Fetched live from PubMed (Gevaert O as last author, excludes preprints and errata).</p>
+    <p style="font-size:.85rem; color:var(--muted); margin-bottom:1.25rem;">Fetched live from PubMed (Gevaert O, Stanford affiliation, excludes errata).</p>
 
     <div class="filter-bar">
       <input type="text" id="pub-search" placeholder="Search by title, author, or journal…" />
@@ -107,14 +107,14 @@
     <div id="pub-container" style="display:none;"></div>
     <div id="pub-error" style="display:none; padding:2rem; background:var(--light); border-radius:8px; text-align:center;">
       <p style="margin-bottom:.5rem;">Unable to reach PubMed right now.</p>
-      <p style="font-size:.875rem; color:var(--muted);">Browse directly on <a href="https://pubmed.ncbi.nlm.nih.gov/?term=Gevaert+O%5BLASTAU%5D+NOT+medRxiv+NOT+bioRxiv+NOT+Desmet+NOT+Camarillo+NOT+erratum&show_snippets=off&sort=date&size=200" target="_blank">PubMed</a> or <a href="https://scholar.google.com/citations?user=_6XYKXMpK34C&hl=en" target="_blank">Google Scholar</a>.</p>
+      <p style="font-size:.875rem; color:var(--muted);">Browse directly on <a href="https://pubmed.ncbi.nlm.nih.gov/?term=Gevaert+O%5BAuthor%5D+AND+Stanford%5BAffiliation%5D+NOT+erratum&show_snippets=off&sort=date&size=200" target="_blank">PubMed</a> or <a href="https://scholar.google.com/citations?user=_6XYKXMpK34C&hl=en" target="_blank">Google Scholar</a>.</p>
     </div>
 
     <!-- External links -->
     <div style="margin-top:3rem; padding:1.5rem; border:1px solid var(--border); border-radius:8px;">
       <p style="font-size:.8rem; font-weight:700; text-transform:uppercase; letter-spacing:.08em; color:var(--muted); margin-bottom:.85rem;">Browse on external platforms</p>
       <div class="link-row">
-        <a href="https://pubmed.ncbi.nlm.nih.gov/?term=Gevaert+O%5BLASTAU%5D+NOT+medRxiv+NOT+bioRxiv+NOT+Desmet+NOT+Camarillo+NOT+erratum&show_snippets=off&sort=date&size=200" target="_blank">PubMed →</a>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/?term=Gevaert+O%5BAuthor%5D+AND+Stanford%5BAffiliation%5D+NOT+erratum&show_snippets=off&sort=date&size=200" target="_blank">PubMed →</a>
         <a href="https://scholar.google.com/citations?user=_6XYKXMpK34C&hl=en" target="_blank">Google Scholar →</a>
         <a href="https://profiles.stanford.edu/olivier-gevaert?tab=publications#publications" target="_blank">Stanford Profile →</a>
         <a href="https://arxiv.org/search/advanced?advanced=&terms-0-operator=AND&terms-0-term=Olivier+Gevaert&terms-0-field=author" target="_blank">arXiv →</a>
@@ -162,9 +162,9 @@
 
 <script src="js/main.js"></script>
 <script>
-const PUBMED_SEARCH = 'Gevaert O[LASTAU] NOT medRxiv NOT bioRxiv NOT Desmet NOT Camarillo NOT erratum';
+const PUBMED_SEARCH = 'Gevaert O[Author] AND Stanford[Affiliation] NOT erratum';
 const MAX_RESULTS = 200;
-const CACHE_KEY = 'gevaertlab_pubs_v3';
+const CACHE_KEY = 'gevaertlab_pubs_v4';
 
 async function fetchPubs() {
   const searchUrl = `https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=${encodeURIComponent(PUBMED_SEARCH)}&retmax=${MAX_RESULTS}&sort=date&retmode=json`;
