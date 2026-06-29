@@ -7,30 +7,15 @@
   <meta name="description" content="Research projects in multimodal AI, computational pathology, imaging genomics, cancer epigenomics, and more." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
-<div class="stanford-bar">
-  <div class="container">
-    <a href="https://stanford.edu">Stanford University</a>
-    <span>·</span>
-    <a href="https://med.stanford.edu">Stanford Medicine</a>
-    <span>·</span>
-    <a href="https://med.stanford.edu/dbds.html">Biomedical Data Science</a>
-  </div>
-</div>
-
 <nav id="main-nav">
   <div class="nav-inner">
-    <a href="index.html" class="nav-brand">
-      Gevaert Lab
-      <span>Computational Medicine · Stanford</span>
-    </a>
-    <button class="nav-toggle" aria-label="Toggle menu">
-      <span></span><span></span><span></span>
-    </button>
+    <a href="index.html" class="nav-brand">Gevaert<span class="red">Lab</span></a>
+    <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="research.html">Research</a></li>
@@ -41,78 +26,67 @@
   </div>
 </nav>
 
-<!-- Page header -->
-<div style="background:var(--light-gray); padding:2.5rem 0; border-bottom:1px solid var(--border);">
+<div class="page-header">
   <div class="container">
-    <h1 style="color:var(--cardinal);">Research</h1>
-    <p class="text-muted">Multimodal AI methods for complex diseases</p>
+    <h1>Research</h1>
+    <p>Multimodal AI methods for complex diseases</p>
   </div>
 </div>
 
 <section>
   <div class="container">
-    <p style="max-width:720px; font-size:1.05rem; margin-bottom:2.5rem;">
-      The Gevaert Lab has an interdisciplinary focus on developing novel algorithms for multi-scale biomedical data fusion. We work at the intersection of machine learning, genomics, imaging, and clinical medicine — primarily in oncology and cardiovascular disease.
+    <p style="font-size:1.05rem; color:var(--muted); max-width:680px; margin-bottom:3rem; line-height:1.75;">
+      We develop novel algorithms for multi-scale biomedical data fusion — working at the intersection of machine learning, genomics, imaging, and clinical medicine, primarily in oncology and cardiovascular disease.
     </p>
 
-    <!-- Project 1: Medical Digital Twin -->
-    <div style="display:grid; grid-template-columns:1fr 1fr; gap:2.5rem; align-items:center; margin-bottom:3.5rem; padding-bottom:3.5rem; border-bottom:1px solid var(--border);">
+    <!-- 1 Medical Digital Twin -->
+    <div class="research-item">
       <div>
-        <span class="badge">Flagship Project</span>
-        <h2 style="margin-top:.6rem; margin-bottom:.75rem;">Medical Digital Twin</h2>
-        <p>
-          We are developing a medical digital twin — a computational model that integrates a patient's multi-scale data (genomics, imaging, clinical records, wearables) to create a personalized virtual replica that can simulate disease trajectories and predict treatment responses.
-        </p>
-        <p>
-          This work, published in <em>Lancet Digital Health</em> (2025), proposes a framework for how AI can move from single-modality prediction to holistic patient modeling for precision medicine and medical AI.
-        </p>
-        <a href="https://www.sciencedirect.com/science/article/pii/S2589750025000287" target="_blank" class="btn btn-cardinal">Read the paper →</a>
+        <span class="research-tag">Flagship · Medical AI</span>
+        <h2>Medical Digital Twin</h2>
+        <p>We are building a medical digital twin — a computational model that integrates a patient's multi-scale data (genomics, imaging, clinical records, wearables) to create a personalized virtual replica. This model can simulate disease trajectories and predict treatment responses, moving AI from single-modality prediction to holistic patient modeling.</p>
+        <p>Our framework, published in <em>Lancet Digital Health</em> (2025), defines the architecture and clinical applications of this approach for precision medicine.</p>
+        <div class="btn-row mt-1">
+          <a href="https://www.sciencedirect.com/science/article/pii/S2589750025000287" target="_blank" class="btn btn-dark">Read the paper</a>
+        </div>
       </div>
-      <div style="background:linear-gradient(135deg,#8C1515,#4a0a0a); border-radius:8px; height:260px; display:flex; align-items:center; justify-content:center;">
-        <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="1.5">
+      <div class="research-visual">
+        <svg width="64" height="64" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
           <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/>
-          <path d="M12 6v6l4 2"/>
-          <circle cx="12" cy="12" r="3"/>
+          <path d="M12 6v6l4 2"/><circle cx="12" cy="12" r="3"/>
         </svg>
       </div>
     </div>
 
-    <!-- Project 2: Computational Pathology -->
-    <div style="display:grid; grid-template-columns:1fr 1fr; gap:2.5rem; align-items:center; margin-bottom:3.5rem; padding-bottom:3.5rem; border-bottom:1px solid var(--border);">
-      <div style="background:linear-gradient(135deg,#2E2D29,#555); border-radius:8px; height:260px; display:flex; align-items:center; justify-content:center;">
-        <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="1.5">
-          <rect x="3" y="3" width="18" height="18" rx="2"/>
-          <path d="M3 9h18M9 21V9"/>
-        </svg>
-      </div>
+    <!-- 2 Computational Pathology -->
+    <div class="research-item flip">
       <div>
-        <span class="badge">Deep Learning</span>
-        <h2 style="margin-top:.6rem; margin-bottom:.75rem;">Computational Pathology</h2>
-        <p>
-          We develop deep learning models to analyze whole-slide histopathology images for cancer diagnosis, subtype classification, and survival prediction. Our work links pathology phenotypes with molecular data (genomics, epigenomics) to reveal multi-scale disease mechanisms.
-        </p>
-        <p>
-          Recent work includes predicting spatial gene expression from H&amp;E slides using linearized attention (Nature Communications, 2024) and generating synthetic pathology slide tiles from RNA-seq data using diffusion models (Nature Biomedical Engineering, 2025).
-        </p>
-        <a href="publications.html" class="btn btn-cardinal">See related publications →</a>
+        <span class="research-tag">Deep Learning · Pathology</span>
+        <h2>Computational Pathology</h2>
+        <p>We develop deep learning models to analyze whole-slide histopathology images for cancer diagnosis, subtype classification, and survival prediction. A key focus is linking pathology phenotypes directly with molecular data to reveal multi-scale disease mechanisms.</p>
+        <p>Recent work includes predicting spatial gene expression from H&amp;E slides using linearized attention (<em>Nature Communications</em>, 2024) and generating synthetic pathology tiles from RNA-seq data via cascaded diffusion models (<em>Nature Biomedical Engineering</em>, 2025).</p>
+        <a href="publications.html" class="btn-link mt-1">See related publications →</a>
+      </div>
+      <div class="research-visual">
+        <svg width="64" height="64" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+          <rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/>
+        </svg>
       </div>
     </div>
 
-    <!-- Project 3: Quantitative Imaging -->
-    <div style="display:grid; grid-template-columns:1fr 1fr; gap:2.5rem; align-items:center; margin-bottom:3.5rem; padding-bottom:3.5rem; border-bottom:1px solid var(--border);">
+    <!-- 3 Quantitative Imaging -->
+    <div class="research-item">
       <div>
-        <span class="badge">Imaging Genomics</span>
-        <h2 style="margin-top:.6rem; margin-bottom:.75rem;">Quantitative Imaging &amp; Radiogenomics</h2>
-        <p>
-          We develop a framework for non-invasive personalized medicine by linking radiomic features extracted from CT, MR, and PET images with genomic data. This <em>imaging genomics</em> (or <em>radiogenomics</em>) approach reveals how tumor imaging phenotypes reflect underlying molecular biology.
-        </p>
-        <p>
-          Key results include LungNet — a shallow CNN that predicts lung cancer survival from multi-institutional CT data (Nature Machine Intelligence cover, 2020) — and deep learning models for brain tumor segmentation achieving >90% Dice scores.
-        </p>
-        <a href="https://www.nature.com/articles/s42256-020-0173-6" target="_blank" class="btn btn-cardinal">LungNet paper →</a>
+        <span class="research-tag">Imaging · Radiogenomics</span>
+        <h2>Quantitative Imaging &amp; Radiogenomics</h2>
+        <p>We develop a framework for non-invasive personalized medicine by linking radiomic features from CT, MR, and PET images with genomic data. This imaging genomics approach reveals how tumor imaging phenotypes reflect underlying molecular biology.</p>
+        <p>Key results include LungNet — a shallow CNN predicting lung cancer survival from multi-institutional CT data, published on the cover of <em>Nature Machine Intelligence</em> (2020) — and deep learning models for brain tumor segmentation achieving Dice scores above 90%.</p>
+        <div class="btn-row mt-1">
+          <a href="https://www.nature.com/articles/s42256-020-0173-6" target="_blank" class="btn btn-dark">LungNet paper</a>
+        </div>
       </div>
-      <div style="background:linear-gradient(135deg,#1a3a5c,#0d1f33); border-radius:8px; height:260px; display:flex; align-items:center; justify-content:center;">
-        <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="1.5">
+      <div class="research-visual">
+        <svg width="64" height="64" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
           <circle cx="12" cy="12" r="10"/>
           <path d="M12 2a9.96 9.96 0 0 1 4 .8M2.05 12H12"/>
           <ellipse cx="12" cy="12" rx="4" ry="10"/>
@@ -120,126 +94,95 @@
       </div>
     </div>
 
-    <!-- Project 4: Cancer Epigenomics -->
-    <div style="display:grid; grid-template-columns:1fr 1fr; gap:2.5rem; align-items:center; margin-bottom:3.5rem; padding-bottom:3.5rem; border-bottom:1px solid var(--border);">
-      <div style="background:linear-gradient(135deg,#1a5c2a,#0d331a); border-radius:8px; height:260px; display:flex; align-items:center; justify-content:center;">
-        <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="1.5">
+    <!-- 4 Cancer Epigenomics -->
+    <div class="research-item flip">
+      <div>
+        <span class="research-tag">Epigenomics · MethylMix</span>
+        <h2>Cancer Epigenomics</h2>
+        <p>Aberrant DNA methylation is a key mechanism in oncogenesis. We developed <strong>MethylMix</strong>, a computational algorithm to identify differentially methylated genes that are also transcriptionally predictive. Applied across 12 cancer types and in pancancer analyses, it discovered novel methylation-driven subgroups with clinical relevance.</p>
+        <p>We also developed <strong>AMARETTO</strong> and <strong>pancancer AMARETTO</strong>, which integrate copy number, DNA methylation, and gene expression to identify cancer driver genes and regulatory modules across cancer types.</p>
+        <a href="publications.html" class="btn-link mt-1">See related publications →</a>
+      </div>
+      <div class="research-visual">
+        <svg width="64" height="64" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
           <path d="M5 3c0 6 14 6 14 12S5 21 5 21"/>
           <path d="M19 3c0 6-14 6-14 12s14 6 14 6"/>
         </svg>
       </div>
-      <div>
-        <span class="badge">Epigenomics</span>
-        <h2 style="margin-top:.6rem; margin-bottom:.75rem;">Cancer Epigenomics</h2>
-        <p>
-          Aberrant DNA methylation is a key mechanism in oncogenesis. We developed <strong>MethylMix</strong>, a computational algorithm to identify differentially methylated genes that are also transcriptionally predictive. Applied across 12 cancer types plus pancancer analyses, MethylMix discovered novel methylation-driven subgroups with clinical relevance.
-        </p>
-        <p>
-          We also developed <strong>AMARETTO</strong> and <strong>pancancer AMARETTO</strong>, which integrate copy number, DNA methylation, and gene expression data to identify cancer driver genes and regulatory modules across cancers.
-        </p>
-        <a href="publications.html" class="btn btn-cardinal">See related publications →</a>
-      </div>
     </div>
 
-    <!-- Project 5: Multi-omics Data Fusion -->
-    <div style="display:grid; grid-template-columns:1fr 1fr; gap:2.5rem; align-items:center; margin-bottom:3.5rem; padding-bottom:3.5rem; border-bottom:1px solid var(--border);">
+    <!-- 5 Multi-omics -->
+    <div class="research-item">
       <div>
-        <span class="badge">Data Fusion</span>
-        <h2 style="margin-top:.6rem; margin-bottom:.75rem;">Multi-omics Data Fusion</h2>
-        <p>
-          A central theme of the lab is developing methods for integrating multiple layers of biological data. We pioneered early data fusion work using Bayesian and kernel methods in breast and ovarian cancer, and have since developed deep learning approaches for multimodal data fusion.
-        </p>
-        <p>
-          Recent work includes synthetic multimodal data modelling for data imputation (Nature Biomedical Engineering, 2025), sparse canonical correlation analysis for COVID-19 cohort studies (NPJ Digital Medicine, 2024), and multimodal deep learning for prognosis in brain tumors.
-        </p>
-        <a href="publications.html" class="btn btn-cardinal">See related publications →</a>
+        <span class="research-tag">Data Fusion · Multi-omics</span>
+        <h2>Multi-omics Data Fusion</h2>
+        <p>Integrating multiple layers of biological data is a central theme of the lab. We pioneered data fusion work using Bayesian and kernel methods in breast and ovarian cancer, and have since developed deep learning frameworks for multimodal fusion across omics, imaging, and clinical data.</p>
+        <p>Recent work includes synthetic multimodal data modelling for imputation (<em>Nature Biomedical Engineering</em>, 2025), sparse canonical correlation analysis for COVID-19 cohort studies (<em>NPJ Digital Medicine</em>, 2024), and multimodal deep learning for prognosis in brain tumors.</p>
+        <a href="publications.html" class="btn-link mt-1">See related publications →</a>
       </div>
-      <div style="background:linear-gradient(135deg,#5c3a1a,#331f0d); border-radius:8px; height:260px; display:flex; align-items:center; justify-content:center;">
-        <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="1.5">
-          <circle cx="6" cy="6" r="3"/>
-          <circle cx="18" cy="6" r="3"/>
-          <circle cx="12" cy="18" r="3"/>
+      <div class="research-visual">
+        <svg width="64" height="64" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+          <circle cx="6" cy="6" r="3"/><circle cx="18" cy="6" r="3"/><circle cx="12" cy="18" r="3"/>
           <path d="M9 6h6M7.8 8.4l2.4 7.2M16.2 8.4l-2.4 7.2"/>
         </svg>
       </div>
     </div>
 
-    <!-- Project 6: Meta-Learning -->
-    <div style="display:grid; grid-template-columns:1fr 1fr; gap:2.5rem; align-items:center; margin-bottom:3.5rem; padding-bottom:3.5rem; border-bottom:1px solid var(--border);">
-      <div style="background:linear-gradient(135deg,#3a1a5c,#1f0d33); border-radius:8px; height:260px; display:flex; align-items:center; justify-content:center;">
-        <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="1.5">
+    <!-- 6 Meta-learning -->
+    <div class="research-item flip">
+      <div>
+        <span class="research-tag">Meta-Learning · Drug Discovery</span>
+        <h2>Meta-Learning &amp; Drug Discovery</h2>
+        <p>Biomedical AI is constrained by small sample sizes. We develop meta-learning approaches that leverage knowledge from large source-domain datasets to improve models in data-scarce target domains — reducing the data needed by an order of magnitude.</p>
+        <p>We also developed <strong>GeNNius</strong>, a graph neural network method for ultra-fast drug-target interaction inference (<em>Bioinformatics</em>, 2024), and contributed to network modeling for drug discovery via our NCI Cancer Target Discovery and Development (CTD²) collaboration.</p>
+        <div class="btn-row mt-1">
+          <a href="https://www.nature.com/articles/s41467-020-20167-3" target="_blank" class="btn btn-dark">Meta-learning paper</a>
+        </div>
+      </div>
+      <div class="research-visual">
+        <svg width="64" height="64" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
           <path d="M12 2L2 7l10 5 10-5-10-5z"/>
           <path d="M2 17l10 5 10-5M2 12l10 5 10-5"/>
         </svg>
       </div>
-      <div>
-        <span class="badge">Meta-Learning</span>
-        <h2 style="margin-top:.6rem; margin-bottom:.75rem;">Meta-Learning for Oncology</h2>
-        <p>
-          Biomedical AI is often limited by small sample sizes. We develop meta-learning approaches that leverage knowledge from large source-domain datasets to improve models in data-scarce target domains — reducing the amount of data needed by an order of magnitude.
-        </p>
-        <p>
-          In one key study, we used meta-learning to predict cancer patient survival from genomic data (Nature Communications, 2020). We also developed GeNNius, a graph neural network method for ultra-fast drug-target interaction inference (Bioinformatics, 2024).
-        </p>
-        <a href="https://www.nature.com/articles/s41467-020-20167-3" target="_blank" class="btn btn-cardinal">Read the paper →</a>
-      </div>
     </div>
 
-    <!-- Project 7: NSD1 -->
-    <div style="display:grid; grid-template-columns:1fr 1fr; gap:2.5rem; align-items:center; margin-bottom:3.5rem; padding-bottom:3.5rem; border-bottom:1px solid var(--border);">
+    <!-- 7 NSD1 -->
+    <div class="research-item">
       <div>
-        <span class="badge">Cancer Biology</span>
-        <h2 style="margin-top:.6rem; margin-bottom:.75rem;">NSD1 Inactivation &amp; Immune Cold Tumors</h2>
-        <p>
-          We characterized a DNA hypomethylated subtype of lung squamous cell carcinoma defined by NSD1 inactivation, showing strong overlap with a similar subtype in head and neck squamous cell carcinoma. This subtype displays an "immune cold" phenotype with low leukocyte infiltration and low PD-1/PD-L1 expression.
-        </p>
-        <p>
-          These findings have direct implications for immunotherapy selection and reveal a general role for NSD1 in maintaining epigenetic repression of immune-related genes in the tumor microenvironment.
-        </p>
-        <a href="publications.html" class="btn btn-cardinal">See related publications →</a>
+        <span class="research-tag">Immunotherapy · Epigenetics</span>
+        <h2>NSD1 Inactivation &amp; Immune Cold Tumors</h2>
+        <p>We characterized a DNA hypomethylated subtype of lung squamous cell carcinoma defined by NSD1 inactivation, showing strong overlap with a similar subtype in head and neck squamous cell carcinoma. This subtype displays an "immune cold" phenotype — low leukocyte infiltration and low PD-1/PD-L1 expression — with direct implications for immunotherapy selection.</p>
+        <a href="publications.html" class="btn-link mt-1">See related publications →</a>
       </div>
-      <div style="background:linear-gradient(135deg,#1a4a5c,#0d2433); border-radius:8px; height:260px; display:flex; align-items:center; justify-content:center;">
-        <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="1.5">
+      <div class="research-visual">
+        <svg width="64" height="64" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
           <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
         </svg>
-      </div>
-    </div>
-
-    <!-- Project 8: CTD2 -->
-    <div style="display:grid; grid-template-columns:1fr 1fr; gap:2.5rem; align-items:center; margin-bottom:2rem;">
-      <div style="background:linear-gradient(135deg,#5c1a1a,#331010); border-radius:8px; height:260px; display:flex; align-items:center; justify-content:center;">
-        <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="1.5">
-          <circle cx="12" cy="12" r="10"/>
-          <path d="M8 12h8M12 8v8"/>
-        </svg>
-      </div>
-      <div>
-        <span class="badge">NCI · CTD²</span>
-        <h2 style="margin-top:.6rem; margin-bottom:.75rem;">Cancer Target Discovery &amp; Development</h2>
-        <p>
-          We are active members of the NCI Cancer Target Discovery and Development (CTD²) network, collaborating with the labs of Calvin Kuo, Christina Curtis, and Hanlee Ji at Stanford. Our focus is on identifying hypomethylated oncogene candidates using MethylMix and its extensions.
-        </p>
-        <p>
-          Oncogenes activated by hypomethylation have been understudied relative to gene repression by hypermethylation, and represent promising therapeutic targets. All network data is available via the CTD² Data Portal.
-        </p>
-        <a href="https://ocg.cancer.gov/programs/ctd2/" target="_blank" class="btn btn-cardinal">CTD² Network →</a>
       </div>
     </div>
 
   </div>
 </section>
 
+<div class="cta-strip">
+  <div class="container">
+    <h2>Interested in collaborating?</h2>
+    <p>We work with clinicians, biologists, and engineers. Get in touch to discuss potential projects.</p>
+    <a href="contact.html" class="btn btn-white">Contact us →</a>
+  </div>
+</div>
+
 <footer>
   <div class="container">
     <div class="footer-grid">
       <div>
-        <div class="footer-brand">Gevaert Lab</div>
-        <p>Computational Medicine · Stanford University<br>
-        Department of Medicine &amp; Biomedical Data Science</p>
+        <div class="footer-brand">Gevaert<span class="red">Lab</span></div>
+        <p>Department of Medicine &amp; Biomedical Data Science<br>Stanford University School of Medicine</p>
       </div>
       <div>
         <h4>Site</h4>
-        <ul class="footer-links">
+        <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="research.html">Research</a></li>
           <li><a href="people.html">People</a></li>
@@ -249,7 +192,7 @@
       </div>
       <div>
         <h4>Stanford</h4>
-        <ul class="footer-links">
+        <ul>
           <li><a href="https://stanford.edu">Stanford University</a></li>
           <li><a href="https://med.stanford.edu">Stanford Medicine</a></li>
           <li><a href="https://med.stanford.edu/dbds.html">Biomedical Data Science</a></li>
@@ -259,14 +202,10 @@
     </div>
     <div class="footer-bottom">
       <span>© 2026 The Board of Trustees of the Leland Stanford Junior University</span>
-      <span>
-        <a href="https://www.stanford.edu/site/privacy">Privacy</a> ·
-        <a href="https://www.stanford.edu/site/terms">Terms</a>
-      </span>
+      <span><a href="https://www.stanford.edu/site/privacy">Privacy</a> · <a href="https://www.stanford.edu/site/terms">Terms</a></span>
     </div>
   </div>
 </footer>
-
 <script src="js/main.js"></script>
 </body>
 </html>

@@ -5,33 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Gevaert Lab | Computational Medicine · Stanford University</title>
   <meta name="description" content="The Gevaert Lab develops multimodal AI methods for biomedicine with a focus on oncology and cardiovascular disease. Stanford University." />
-  <meta property="og:title" content="Gevaert Lab | Stanford University" />
-  <meta property="og:description" content="Multimodal AI in biomedicine — developing novel machine learning methods for complex diseases." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
-<!-- Stanford identity bar -->
-<div class="stanford-bar">
-  <div class="container">
-    <a href="https://stanford.edu">Stanford University</a>
-    <span>·</span>
-    <a href="https://med.stanford.edu">Stanford Medicine</a>
-    <span>·</span>
-    <a href="https://med.stanford.edu/dbds.html">Biomedical Data Science</a>
-  </div>
-</div>
-
-<!-- Navigation -->
 <nav id="main-nav">
   <div class="nav-inner">
-    <a href="index.html" class="nav-brand">
-      Gevaert Lab
-      <span>Computational Medicine · Stanford</span>
-    </a>
+    <a href="index.html" class="nav-brand">Gevaert<span class="red">Lab</span></a>
     <button class="nav-toggle" aria-label="Toggle menu">
       <span></span><span></span><span></span>
     </button>
@@ -48,116 +31,115 @@
 <!-- Hero -->
 <section class="hero">
   <div class="container">
+    <p class="eyebrow">Stanford University · School of Medicine</p>
     <h1>Multimodal AI<br>in Biomedicine</h1>
-    <p class="tagline">
-      Developing novel machine learning methods to integrate multi-omics, imaging, and clinical data for precision medicine in oncology and cardiovascular disease.
-    </p>
-    <div class="hero-actions">
-      <a href="research.html" class="btn btn-white">Our Research</a>
-      <a href="publications.html" class="btn btn-outline-white">Publications</a>
-      <a href="people.html" class="btn btn-outline-white">Join Us</a>
+    <p class="lead">We develop machine learning methods that integrate genomics, imaging, and clinical data — advancing precision medicine in oncology and cardiovascular disease.</p>
+    <div class="btn-row">
+      <a href="research.html" class="btn btn-dark">Explore research</a>
+      <a href="publications.html" class="btn btn-outline">Publications</a>
+      <a href="contact.html" class="btn-link">Join us →</a>
     </div>
   </div>
 </section>
+
+<!-- Stats -->
+<div class="stats-strip">
+  <div class="stat">
+    <div class="stat-num">80<span>+</span></div>
+    <div class="stat-label">Peer-reviewed<br>publications</div>
+  </div>
+  <div class="stat">
+    <div class="stat-num">15<span>+</span></div>
+    <div class="stat-label">Active lab<br>members</div>
+  </div>
+  <div class="stat">
+    <div class="stat-num">8</div>
+    <div class="stat-label">Core research<br>areas</div>
+  </div>
+  <div class="stat">
+    <div class="stat-num">NCI<span style="font-size:1.2rem"> ·</span> NIBIB</div>
+    <div class="stat-label">Primary<br>funding</div>
+  </div>
+</div>
 
 <!-- About -->
 <section>
   <div class="container">
-    <div style="display:grid; grid-template-columns: 1fr 340px; gap:3rem; align-items:start;">
+    <div style="display:grid; grid-template-columns:1fr 320px; gap:4rem; align-items:start;">
       <div>
-        <h2 class="section-heading">About the Lab</h2>
-        <p>
-          The Gevaert Lab focuses on developing novel multimodal AI methods for complex diseases, with a particular focus on oncology and cardiovascular disease. We develop novel machine learning approaches that digest multi-omics, multimodal, and multi-scale data.
+        <p class="section-label">About</p>
+        <p style="font-size:1.05rem; color:var(--body); line-height:1.75; margin-bottom:1.25rem;">
+          The Gevaert Lab focuses on developing novel multimodal AI methods for complex diseases, with a particular focus on oncology and cardiovascular disease. We build machine learning methods — from Bayesian and kernel approaches to deep learning — that integrate molecular, imaging, and clinical data at multiple scales.
         </p>
-        <p>
-          Our work spans Bayesian and kernel methods, regularized regression, and deep learning to integrate molecular data and omics. We also investigate linking omics data with cellular and tissue data in the context of computational pathology, imaging genomics, and radiogenomics.
+        <p style="color:var(--muted); margin-bottom:1.25rem;">
+          A central goal is the <strong style="color:var(--dark);">medical digital twin</strong>: a computational model that integrates a patient's multi-scale data to create a personalized virtual replica, enabling prediction of disease trajectories and treatment responses.
         </p>
-        <p>
-          A central goal is the development of a framework for non-invasive personalized medicine — building what we call a <strong>medical digital twin</strong> that integrates multi-scale patient data to support clinical decisions.
+        <p style="color:var(--muted);">
+          Our interdisciplinary team brings together machine learning, genomics, radiology, and pathology to build methods that work on real clinical data and translate toward precision medicine.
         </p>
-        <a href="research.html" class="btn btn-cardinal mt-1">Explore our projects →</a>
       </div>
-      <div>
-        <div class="highlight-box">
-          <h3 style="color:var(--cardinal); margin-bottom:.75rem;">Research Areas</h3>
-          <ul style="list-style:none; padding:0;">
-            <li style="padding:.45rem 0; border-bottom:1px solid var(--border);">🧬 Multi-omics data fusion</li>
-            <li style="padding:.45rem 0; border-bottom:1px solid var(--border);">🧠 Computational pathology</li>
-            <li style="padding:.45rem 0; border-bottom:1px solid var(--border);">🩻 Quantitative imaging &amp; radiogenomics</li>
-            <li style="padding:.45rem 0; border-bottom:1px solid var(--border);">🔬 Cancer epigenomics</li>
-            <li style="padding:.45rem 0; border-bottom:1px solid var(--border);">🤖 Deep learning for biomedical data</li>
-            <li style="padding:.45rem 0; border-bottom:1px solid var(--border);">💊 Network modeling for drug discovery</li>
-            <li style="padding:.45rem 0;">🪞 Medical digital twins</li>
-          </ul>
-        </div>
+      <div class="infobox">
+        <h3>Research areas</h3>
+        <ul>
+          <li>Multi-omics data fusion</li>
+          <li>Computational pathology</li>
+          <li>Quantitative imaging &amp; radiogenomics</li>
+          <li>Cancer epigenomics</li>
+          <li>Deep learning for biomedical data</li>
+          <li>Network modeling &amp; drug discovery</li>
+          <li>Meta-learning for small datasets</li>
+          <li>Medical digital twins</li>
+        </ul>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Highlighted publications -->
-<section style="background: var(--light-gray);">
+<!-- Recent papers -->
+<section class="alt-bg">
   <div class="container">
-    <h2 class="section-heading">Recent Highlights</h2>
+    <p class="section-label">Recent highlights</p>
     <div class="card-grid">
 
       <div class="card">
-        <div class="card-body">
-          <span class="card-tag">Lancet Digital Health · 2025</span>
-          <h3>Medical digital twins: enabling precision medicine and medical AI</h3>
-          <p>A framework integrating multi-scale patient data to build digital replicas for precision medicine decision support.</p>
-          <a class="card-link" href="https://www.sciencedirect.com/science/article/pii/S2589750025000287" target="_blank">Read paper →</a>
-        </div>
+        <div class="card-venue">Lancet Digital Health · 2025</div>
+        <h3>Medical digital twins: enabling precision medicine and medical AI</h3>
+        <a class="card-link" href="https://www.sciencedirect.com/science/article/pii/S2589750025000287" target="_blank">Read paper →</a>
       </div>
 
       <div class="card">
-        <div class="card-body">
-          <span class="card-tag">Science Advances · 2025</span>
-          <h3>Single-cell multimodal analysis predicts treatment response in NSCLC</h3>
-          <p>Single-cell multimodal analysis reveals tumor microenvironment features predictive of treatment response in non-small cell lung cancer.</p>
-          <a class="card-link" href="https://www.science.org/doi/10.1126/sciadv.adu2151" target="_blank">Read paper →</a>
-        </div>
+        <div class="card-venue">Science Advances · 2025</div>
+        <h3>Single-cell multimodal analysis reveals tumor microenvironment predictive of treatment response in NSCLC</h3>
+        <a class="card-link" href="https://www.science.org/doi/10.1126/sciadv.adu2151" target="_blank">Read paper →</a>
       </div>
 
       <div class="card">
-        <div class="card-body">
-          <span class="card-tag">Nature Biomedical Engineering · 2025</span>
-          <h3>Generation of synthetic whole-slide image tiles via cascaded diffusion models</h3>
-          <p>RNA-sequencing data drives cascaded diffusion models to generate realistic pathology slide tiles for AI training.</p>
-          <a class="card-link" href="https://www.nature.com/articles/s41551-024-01193-8" target="_blank">Read paper →</a>
-        </div>
+        <div class="card-venue">Nature Biomedical Engineering · 2025</div>
+        <h3>Synthetic whole-slide image tiles from RNA-sequencing data via cascaded diffusion models</h3>
+        <a class="card-link" href="https://www.nature.com/articles/s41551-024-01193-8" target="_blank">Read paper →</a>
       </div>
 
       <div class="card">
-        <div class="card-body">
-          <span class="card-tag">Nature Communications · 2024</span>
-          <h3>Digital profiling of gene expression from histology images</h3>
-          <p>Linearized attention transformer architecture predicts spatial gene expression directly from H&amp;E histology images.</p>
-          <a class="card-link" href="https://www.nature.com/articles/s41467-024-54182-5" target="_blank">Read paper →</a>
-        </div>
+        <div class="card-venue">Nature Communications · 2024</div>
+        <h3>Digital profiling of gene expression from histology images with linearized attention</h3>
+        <a class="card-link" href="https://www.nature.com/articles/s41467-024-54182-5" target="_blank">Read paper →</a>
       </div>
 
       <div class="card">
-        <div class="card-body">
-          <span class="card-tag">Nature Machine Intelligence · 2023</span>
-          <h3>Multimodal data fusion for cancer biomarker discovery with deep learning</h3>
-          <p>A deep learning framework for fusing imaging, genomic, and clinical data to discover cancer biomarkers.</p>
-          <a class="card-link" href="https://www.nature.com/articles/s42256-023-00633-5" target="_blank">Read paper →</a>
-        </div>
+        <div class="card-venue">Nature Machine Intelligence · 2023</div>
+        <h3>Multimodal data fusion for cancer biomarker discovery with deep learning</h3>
+        <a class="card-link" href="https://www.nature.com/articles/s42256-023-00633-5" target="_blank">Read paper →</a>
       </div>
 
       <div class="card">
-        <div class="card-body">
-          <span class="card-tag">Nature Medicine · 2023</span>
-          <h3>Deep-learning algorithm to classify skin lesions from mpox virus infection</h3>
-          <p>A multimodal deep learning model to classify mpox skin lesions, validated across multiple clinical sites.</p>
-          <a class="card-link" href="https://www.nature.com/articles/s41591-023-02225-7" target="_blank">Read paper →</a>
-        </div>
+        <div class="card-venue">Nature Medicine · 2023</div>
+        <h3>A deep-learning algorithm to classify skin lesions from mpox virus infection</h3>
+        <a class="card-link" href="https://www.nature.com/articles/s41591-023-02225-7" target="_blank">Read paper →</a>
       </div>
 
     </div>
-    <div class="mt-2 text-center">
-      <a href="publications.html" class="btn btn-cardinal">All publications →</a>
+    <div class="mt-2">
+      <a href="publications.html" class="btn btn-outline">All publications →</a>
     </div>
   </div>
 </section>
@@ -165,43 +147,36 @@
 <!-- Funding -->
 <section>
   <div class="container">
-    <h2 class="section-heading">Funding</h2>
-    <p class="text-muted mb-2">The Gevaert Lab is grateful for support from:</p>
-    <div class="funding-logos">
-      <img src="https://med.stanford.edu/gevaertlab/_jcr_content/main/panel_builder_1753049571/panel_0/image.img.620.high.png/nibib-logo_1_0.png" alt="NIBIB" />
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/US-NationalCancerInstitute-Logo.svg/320px-US-NationalCancerInstitute-Logo.svg.png" alt="NCI" style="height:45px;" />
+    <p class="section-label">Funding</p>
+    <div style="display:flex; flex-wrap:wrap; gap:2.5rem; align-items:center;">
+      <img src="https://med.stanford.edu/gevaertlab/_jcr_content/main/panel_builder_1753049571/panel_0/image.img.620.high.png/nibib-logo_1_0.png" alt="NIBIB" style="height:42px; width:auto; opacity:.8;" />
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/US-NationalCancerInstitute-Logo.svg/320px-US-NationalCancerInstitute-Logo.svg.png" alt="NCI" style="height:38px; width:auto; opacity:.8;" />
     </div>
-    <div class="highlight-box cardinal mt-2" style="max-width:520px;">
-      <h3>Support the Lab</h3>
-      <p>Help accelerate our research in multimodal AI for precision medicine.</p>
-      <a href="https://makeagift.stanford.edu/get/page/makeagift?indexredir=r&refid=FAA65069573586029514D723C0E16CCB11BE49C1864B430A392B06347FAE5199B133D798BC982B80A6C5F6B5A010A5D6FE3F0080B4041324" target="_blank" class="btn btn-white mt-1">Make a Gift</a>
-    </div>
-  </div>
-</section>
-
-<!-- Join us -->
-<section style="background: var(--light-gray);">
-  <div class="container text-center">
-    <h2 class="section-heading" style="display:block; border-bottom:none;">Join the Gevaert Lab</h2>
-    <p style="max-width:600px; margin:0 auto 1.5rem;">
-      We are recruiting graduate students, postdocs, and other scientists passionate about realizing a multi-scale data fusion framework for precision medicine.
+    <p class="mt-2" style="font-size:.875rem; color:var(--muted);">
+      Support the lab — <a href="https://makeagift.stanford.edu/get/page/makeagift?indexredir=r&refid=FAA65069573586029514D723C0E16CCB11BE49C1864B430A392B06347FAE5199B133D798BC982B80A6C5F6B5A010A5D6FE3F0080B4041324" target="_blank">make a gift</a> and select "other designation" → Gevaert Lab.
     </p>
-    <a href="contact.html" class="btn btn-cardinal">Get in touch →</a>
   </div>
 </section>
 
-<!-- Footer -->
+<!-- CTA -->
+<div class="cta-strip">
+  <div class="container">
+    <h2>Join the Gevaert Lab</h2>
+    <p>We are recruiting graduate students, postdocs, and visiting scientists passionate about multimodal AI for precision medicine.</p>
+    <a href="contact.html" class="btn btn-white">Get in touch →</a>
+  </div>
+</div>
+
 <footer>
   <div class="container">
     <div class="footer-grid">
       <div>
-        <div class="footer-brand">Gevaert Lab</div>
-        <p>Computational Medicine · Stanford University<br>
-        Department of Medicine &amp; Biomedical Data Science</p>
+        <div class="footer-brand">Gevaert<span class="red">Lab</span></div>
+        <p>Department of Medicine &amp; Biomedical Data Science<br>Stanford University School of Medicine</p>
       </div>
       <div>
         <h4>Site</h4>
-        <ul class="footer-links">
+        <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="research.html">Research</a></li>
           <li><a href="people.html">People</a></li>
@@ -211,7 +186,7 @@
       </div>
       <div>
         <h4>Stanford</h4>
-        <ul class="footer-links">
+        <ul>
           <li><a href="https://stanford.edu">Stanford University</a></li>
           <li><a href="https://med.stanford.edu">Stanford Medicine</a></li>
           <li><a href="https://med.stanford.edu/dbds.html">Biomedical Data Science</a></li>
@@ -221,10 +196,7 @@
     </div>
     <div class="footer-bottom">
       <span>© 2026 The Board of Trustees of the Leland Stanford Junior University</span>
-      <span>
-        <a href="https://www.stanford.edu/site/privacy">Privacy</a> ·
-        <a href="https://www.stanford.edu/site/terms">Terms</a>
-      </span>
+      <span><a href="https://www.stanford.edu/site/privacy">Privacy</a> · <a href="https://www.stanford.edu/site/terms">Terms</a></span>
     </div>
   </div>
 </footer>
